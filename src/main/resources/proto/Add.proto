@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package grpc;
+option java_package = "com.docker.grpc.add";
+option java_outer_classname = "AddServiceProto";
+option java_multiple_files = true;
+
+
+//添加一个服务
+service AddService{
+  //入参 和 出参
+  rpc add(AddRequest) returns (AddReply){}
+}
+
+// int类型要指定位
+message AddRequest{
+  int32 a = 1;
+  int32 b = 2;
+}
+
+// int类型要指定位
+message AddReply{
+  int32 res = 1;
+}

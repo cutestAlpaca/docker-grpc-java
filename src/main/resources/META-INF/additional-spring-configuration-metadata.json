@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "grpc.server.post",
+      "type": "java.lang.String",
+      "description": "Description for grpc.server.post."
+  }
+] }

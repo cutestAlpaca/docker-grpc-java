@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+grpc:
+  server:
+    port: 999
+
+spring:
+  mail:
+    # SMTP server address
+    host: smtp.xx.xxx
+    # protocol
+    protocol: smtps
+    # sender email
+    username: xxx@xxx.com
+    # Authorization code
+    password: xxxxx
+    # port
+    port: 465
+    # coding default UTF-8
+    default-encoding: UTF-8
+    # SSL
+    properties:
+      mail:
+        smtp:
+          socketFactoryClass: javax.net.ssl.SSLSocketFactory
+        # 是否开启debug
+        debug: false
